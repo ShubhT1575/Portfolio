@@ -19,10 +19,6 @@ function App() {
     <>
     <Router>
     <Navbar/>
-    {/* <Home/>
-    <About/>
-    <Portfolio/>
-    <Contact/> */}
     <Routes>
           <Route exact path="/About" element={<About/>}>
           </Route>

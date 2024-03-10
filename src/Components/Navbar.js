@@ -6,7 +6,7 @@ function Navbar() {
     <>
       <nav className="navbar navbar-expand-lg sticky-top navbar-dark">
         <div className="container-fluid">
-          <Link className="navbar-brand mx-5 mb-2" to="/">
+          <Link className="navbar-brand mx-5 mb-2 shubham" to="/">
             {`Shubham Tiwari`}
           </Link>
           <button
