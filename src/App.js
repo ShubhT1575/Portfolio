@@ -7,8 +7,7 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
 import {
-  BrowserRouter as Router,
-  HashRouter,
+  HashRouter as Router,
   Route,
   Routes,
   Link
@@ -18,8 +17,7 @@ import {
 function App() {
   return (
     <>
-    {/* <Router basename="/Portfolio-react"> */}
-    <HashRouter basename="/Portfolio-react">
+    <Router>
     <Navbar/>
     {/* <Home/>
     <About/>
@@ -28,7 +26,7 @@ function App() {
     <Routes>
           <Route exact path="/About" element={<About/>}>
           </Route>
-          <Route exact path="/Portfolio-react" element={<Home/>}>
+          <Route exact path="/" element={<Home/>}>
           </Route>
           <Route exact path="/Portfolio" element={<Portfolio/>}>
           </Route>
@@ -38,8 +36,7 @@ function App() {
           </Route>
     </Routes>
     <Footer/>
-    {/* </Router> */}
-    </HashRouter>
+    </Router>
     </>
   );
 }
