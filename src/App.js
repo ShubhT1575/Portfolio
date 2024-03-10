@@ -19,7 +19,7 @@ function App() {
   return (
     <>
     {/* <Router basename="/Portfolio-react"> */}
-    <HashRouter>
+    <HashRouter basename="/Portfolio-react">
     <Navbar/>
     {/* <Home/>
     <About/>
@@ -28,7 +28,7 @@ function App() {
     <Routes>
           <Route exact path="/About" element={<About/>}>
           </Route>
-          <Route exact path="/" element={<Home/>}>
+          <Route exact path="/Portfolio-react" element={<Home/>}>
           </Route>
           <Route exact path="/Portfolio" element={<Portfolio/>}>
           </Route>
