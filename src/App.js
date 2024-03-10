@@ -8,7 +8,7 @@ import Footer from "./Components/Footer";
 
 import {
   BrowserRouter as Router,
-  // HashRouter,
+  HashRouter,
   Route,
   Routes,
   Link
@@ -18,7 +18,8 @@ import {
 function App() {
   return (
     <>
-    <Router basename="/Portfolio-react">
+    {/* <Router basename="/Portfolio-react"> */}
+    <HashRouter>
     <Navbar/>
     {/* <Home/>
     <About/>
@@ -27,7 +28,7 @@ function App() {
     <Routes>
           <Route exact path="/About" element={<About/>}>
           </Route>
-          <Route exact path="/Portfolio-react" element={<Home/>}>
+          <Route exact path="/" element={<Home/>}>
           </Route>
           <Route exact path="/Portfolio" element={<Portfolio/>}>
           </Route>
@@ -37,7 +38,8 @@ function App() {
           </Route>
     </Routes>
     <Footer/>
-    </Router>
+    {/* </Router> */}
+    </HashRouter>
     </>
   );
 }
